@@ -30,7 +30,7 @@ class FullPost extends Component {
   render() {
     let post = <p style={{textAlign: 'center'}}>Please select a Post!</p>
     if (this.props.id) {
-      let post = <p style={{textAlign: 'center'}}>Post Loading, Sit Tight!</p>
+      post = <p style={{textAlign: 'center'}}>Post Loading, Sit Tight!</p>
     }
     if (this.state.loadedPost) {
       post = (
